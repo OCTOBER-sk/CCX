@@ -1,5 +1,6 @@
 # Binaries
 ccx
+!cmd/ccx/
 ccx.exe
 *.exe
 
