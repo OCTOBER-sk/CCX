@@ -1,0 +1,35 @@
+# Binaries
+ccx
+ccx.exe
+*.exe
+
+# Build artifacts
+/dist/
+/bin/
+
+# Logs
+*.log
+logs/
+
+# Runtime state
+~/.ccx/
+.ccx/
+state/
+cache/
+runtime/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+vendor/
+
+# Sensitive fixtures
+fixtures/sensitive/

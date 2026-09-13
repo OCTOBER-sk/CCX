@@ -1,0 +1,13 @@
+# Compatibility rule per spec section 83 (lines 2899-2943) and section 317 (lines 7762-7821).
+# Every compatibility rule needs: id, introduced, last_verified, applies_to, evidence, severity, action.
+
+id: gateway-discovery-requires-auth-env
+introduced: 2026-09-12
+last_verified: 2026-09-12
+applies_to: ">=2.1.129"
+evidence: |
+  Claude Code gateway model discovery exists for gateway configurations and can query /v1/models;
+  current documentation indicates discovery requires Claude Code v2.1.129 or later.
+  Real reports document discovery being gated by internal gateway-mode resolution and silently skipped.
+severity: warning
+action: ensure_local_gateway_token
